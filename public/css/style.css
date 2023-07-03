@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #5efdc0;
+    text-align: center;
+}
+footer{
+    padding: 20px 0;
+    background-color: #5efdc0;
+    color: black;
+    text-align: center;
+    clear: both;
+}
+body{
+    background-color: whitesmoke;
+    background-size: cover;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+/*search*/
+.search_box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 5px;
+    padding-left: 50px;
+}
+.search_box img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.search_box input{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+
+/*Navigasi*/
+.menu{
+    font-family: Tahoma;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+    background: #082d22;
+    border-radius: 5px;
+    font-size: 14px;
+}
+label{
+    font-family: lucida handwriting;
+    font-size: 20pt;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+}
+.menu ul{
+    margin: 0px;
+    padding: 6px;
+    background: none;
+    display: block;
+    float: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(108, 232, 150);
+    border: 2px solid white;
+    border-radius: 15px;
+
+}
+.menu ul li a:hover{
+    display: block;
+    color: #ffdab9;
+    background: black;
+    box-shadow: inset 0px 0px 15px;
+}
+.active{
+    background-color: #a56e3e;
+    color: #fff;
+    border-radius: 15px;
+}
+.menu ul li .dropdown{
+    display: none;
+}
+.menu ul li:hover .dropdown{
+    display: block;
+    background: #082d22;
+    position: absolute;
+    padding: 10px;
+}
+.menu ul li:hover .dropdown li{
+    display: block;
+}
+.menu ul li:hover .dropdown li a{
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+nav.menu ul li:hover .dropdown li a:hover{
+    background: rgb(30, 188, 35);
+    box-shadow: inset 0px 0px 5px #000;
+}
+.sidebar{
+    margin: 30px;
+    float: right;
+    width: 250px;
+}
+.populer-pict{
+    border-radius: 8px;
+}
+/*Sidebar*/
+.sidebar .trend{
+    padding: 15px;
+    margin: 0 0 15px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+}
+.sidebar .populer{
+    padding: 25px;
+    margin: 0 0 10px;
+    background: white;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    border: 1px solid rgba(10, 128, 238, 0.55);
+}
+.sidebar .populer:hover{
+    border-bottom: 5px solid #3498db;
+    box-shadow: 5px 5px 5px 0px rgba(148, 137, 137, 0.55);
+}
+.sidebar .populer h2{
+    padding: 0;
+    margin: 0 0 10px;
+    color: #0089a4;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.sidebar .populer p{
+    font-size: 14px;
+}
+.sidebar .populer p:last-child{
+    margin: 0;
+}
+/*Content*/
+.blog{
+    float:left;
+    margin: 80px;
+}
+.conteudo { 
+    width: 600px;  
+    padding:25px;  
+    margin:15px auto;  
+    background: maroon;  
+    transition: all 0.5s ease;  
+    border:2px solid #dedede;  
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(100, 31, 31, 0.35);  
+    -moz-box-shadow: 1px 1px 1px 0px rgba(100, 31, 31, 0.35);  
+    box-shadow: 1px 1px 1px 0px rgba(100, 31, 31, 0.35);  
+    border-radius: 15px 25px;  
+    background-color: #e3dac9; 
+} 
+.conteudo img { 
+ min-width: 400px; 
+ margin: auto; 
+ border: 15px; 
+  
+} 
+.conteudo:hover{  
+    border-bottom: 4px solid #612525;  
+    box-shadow: 5px 5px 5px 0px rgba(204,204,204,0.35);  
+}  
+.conteudo h1 { 
+ padding:0; 
+ margin:0 0 15px; 
+ font-weight: normal; 
+ color:#dc143c; 
+ font-family: Georgia; 
+ text-align: center; 
+} 
+.conteudo p:last-child { 
+ margin: 0; 
+} 
+  
+.conteudo .continue-lendo { 
+ color:#000; 
+ transition: all 0.5s ease; 
+ text-decoration: none; 
+ font-weight: 700;  
+} 
+  
+.conteudo .continue-lendo:hover { 
+ margin-left:10px; 
+}
+/*Profile*/
+.profile{
+    padding: 100px;
+    background-image: linear-gradient(-20deg, #91ffe5 0%, #137662 100%);
+    text-align: center;
+    font-family: 'Quicksand';
+}
+.profile img { 
+    border-radius: 5px; 
+}
+/*Pagination*/
+.pagination ul {
+    position: absolute;
+    background: #ffdeb9;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+.pagination ul li {
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px;
+  }
+.pagination ul li.numberpage {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+.pagination ul li a {
+    display: block;
+    text-decoration: none;
+    color: #383838;
+    font-weight: 600;
+    border-radius: 30%;
+  }
+.pagination ul li.numberpage:hover a,
+.pagination ul li.numberpage.active a {
+    background: #d79b22;
+    color: #fff;
+  }
+  
+  .container h1{
+      text-align: center;
+  }
+/*Layar*/
+@media screen and (max-width: 960px) { 
+    .header{
+        position: inherit;
+    }
+    .wrap{
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar{
+        width: 100%;
+        margin: 25px 0 0;
+        float: right;
+    }
+    .sidebar .populer{
+        padding: 5%;
+    }
+    menu ul{
+        width: 100%;
+        float: inherit;
+    }
+    .blog{
+        width: 88%;
+    }
+    .conteudo { 
+     float:left; 
+     margin:0 auto 25px; 
+     width:101%; 
+     border:1px solid #dedede; 
+     padding:5%;   
+     background: #fff; 
+    } 
+     
+    .conteudo img { 
+     max-width: 110%; 
+     margin:0 0 25px -5%; 
+     min-width: 110%; 
+    } 
+     
+    .conteudo .continue-lendo:hover { 
+     margin-left:0; 
+    } 
+     
+   } 
+     
+   @media screen and (max-width: 400px) { 
+       menu ul a{
+           padding: 15px;
+           font-size: 14px;
+       }
+       .sidebar{
+           display: none;
+       }
+     
+    .post-info { 
+     display:none; 
+    } 
+    .conteudo { 
+     margin:25px auto; 
+    } 
+     
+    .conteudo img { 
+     margin:-5% 0 25px -5%; 
+    }    
+   }

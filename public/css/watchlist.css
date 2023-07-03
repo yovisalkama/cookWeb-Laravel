@@ -1,0 +1,130 @@
+*{  
+    padding: 0;  
+    margin: 0;  
+    box-sizing: border-box;  
+    font-family: 'verdana',sans-serif;  
+}  
+.active a{ 
+    background-color: silver; 
+    border-radius: 10px; 
+    color: red; 
+}
+hr {
+    border:0;
+    background:#dedede;
+    height:1px;
+   }  
+   
+   /*header*/
+   header{
+    text-align: center;
+    color: white;
+    background-color: maroon;
+    height: 80px;
+   }
+   
+   header .judul{ 
+       font-size: 17pt; 
+   } 
+    
+   
+    
+   header .deskripsi{
+    font-size: 11pt;
+   }
+   
+   /*menu*/
+   .wrap {
+    width: 950px;
+    margin:25px auto;
+   }
+    
+   nav.menu ul {
+    overflow: hidden;
+    color:maroon;
+    list-style: none;
+    float:left;
+    padding:0;
+    width: 650px;
+    margin:0 0 0;
+   
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(128, 0, 0, 0.521);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(128, 0, 0, 0.521);
+    box-shadow: 1px 1px 1px 0px rgba(128, 0, 0, 0.521);
+    border-radius: 15px; 
+    color: red;
+    
+   }
+    
+   nav.menu ul a:hover { 
+       text-decoration: underline; 
+       color:#666; 
+       border-radius: 15px; 
+       background: #fff;   
+      } 
+   
+   nav.menu ul li {
+    margin:15px;
+    float:left;
+    flex: 2;
+   }
+    
+   nav.menu ul a {
+    padding:25px;
+    display:block;
+    font-weight:600;
+    font-size: 14px;
+    color:maroon;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-align: center; 
+   }
+   
+   .active a{ 
+       color: red; 
+   } 
+   
+   .menu ul li .dropdown{ 
+       display:none; 
+   } 
+    
+   .menu ul li:hover .dropdown{ 
+       display: block; 
+       background: rgba(255, 255, 255, 0.589);
+       position: absolute; 
+       padding: 10px; 
+       width: 250px;
+   
+   } 
+    
+   .menu ul li:hover .dropdown li{ 
+       display: inline-block; 
+   } 
+    
+   .menu ul li:hover .dropdown li a{ 
+       padding: 10px; 
+       border-radius: 5px; 
+       margin-bottom: 5px; 
+   } 
+
+   table, thead, tbody, td, th {
+    border: 0.5px solid black;
+}
+.hapus{
+    cursor: pointer;
+    color: red;
+}
+.nama{
+    padding-left: 20px;
+}
+
+   footer .copyright{
+    background-color: maroon;
+    padding-top: 1px; 
+    padding-bottom: 10px;
+    top : -22px;
+    height: 70px;
+    text-align: center;
+    clear: both;
+   }
